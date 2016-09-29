@@ -8,7 +8,7 @@
     font-size: 20px;
 }
 .hero {
-    background-image: url("../img/server-farm.jpg");
+    background-image: url("server-farm.jpg");
     width: 100% auto;
     height: 630px;
     background-size: cover;
@@ -215,7 +215,7 @@ h2 {
     background-size: cover;
 }
 .work {
-    background-image: url("../img/aviato.png");
+    background-image: url("aviato.png");
     width: 100% auto;
     height: 400px;
     background-position: center;
@@ -240,7 +240,7 @@ h2 {
     font-weight: lighter;
 }
 .work2 {
-    background-image: url("../img/boring.png");
+    background-image: url("boring.png");
     width: auto;
     height: 400px;
     background-position: center;
@@ -253,7 +253,7 @@ h2 {
     size: 100%;
 }
 .work3 {
-    background-image: url("../img/pink.png");
+    background-image: url("pink.png");
     width: auto;
     height: 400px;
     background-position: center;
@@ -266,7 +266,7 @@ h2 {
     size: 100%;
 }
 .work4 {
-    background-image: url("../img/swift.png");
+    background-image: url("swift.png");
     width: auto;
     height: 400px;
     background-position: center;
@@ -346,7 +346,7 @@ p {
 /*fifth*/
 
 .years {
-    background-image: url("../img/gif.gif");
+    background-image: url("gif.gif");
     width: 100% auto;
     height: 500px;
     background-size: cover;
