@@ -17,10 +17,14 @@ font-weight: lighter;
 font-size: 25px;
 }
 
+.textbox {
+  margin-right: -100px;
+  text-align: center;
+}
 
  .header a {
   float: right;
-  margin-right: 25px;
+  margin-right: -45px;
   margin-top: -8px;
   padding-left: 20px;
   text-decoration: none;
@@ -345,66 +349,6 @@ Mirror Effect
   }
 }
 
-/*GLITCH EFFECT*/
-
-/* --------------------------------
-
-Glitch Effect
-
--------------------------------- */
-.glitch-transition {
-  font-family: "Work Sans", sans-serif;
-  color: #ffffff;
-}
-.glitch-transition h1, .glitch-transition h2 {
-  margin-bottom: .4em;
-  font-size: 4rem;
-  font-weight: 700;
-}
-.glitch-transition .cd-btn {
-  background: #676970;
-  color: #ffffff;
-}
-.glitch-transition .cd-main-content {
-  background: #2e2f36;
-}
-.glitch-transition .cd-modal {
-  background: #ffffff;
-}
-.glitch-transition .cd-modal .modal-content {
-  color: #676970;
-}
-.glitch-transition .cd-modal .modal-close::before,
-.glitch-transition .cd-modal .modal-close::after {
-  background: #ffffff;
-}
-.glitch-transition .cd-modal .modal-close {
-  background: #d9d9d9;
-}
-.glitch-transition .cd-modal .modal-close:hover {
-  background: #b3b3b3;
-}
-.glitch-transition .cd-transition-layer .bg-layer {
-  /* sprite composed of 25 frames */
-  width: 2500%;
-  background-image: url(../img/glitch.png);
-}
-.glitch-transition .cd-transition-layer.opening .bg-layer {
-  -webkit-animation: cd-sequence 0.8s steps(24) forwards;
-          animation: cd-sequence 0.8s steps(24) forwards;
-}
-.glitch-transition .cd-transition-layer.closing .bg-layer {
-  -webkit-animation: cd-sequence 0.8s steps(24) forwards reverse;
-          animation: cd-sequence 0.8s steps(24) forwards reverse;
-}
-@media only screen and (min-width: 768px) {
-  .glitch-transition h1 {
-    font-size: 8rem;
-  }
-  .glitch-transition h2 {
-    font-size: 6rem;
-  }
-}
 
 
 /*ANIMATIONS*/
@@ -480,7 +424,25 @@ Animations
 }
 
 
+
+
+
+
+
+
+
+
+
 /*third area*/
+
+
+
+
+
+
+
+
+
 
 
 
@@ -643,9 +605,9 @@ margin-left: -70px;
 }
 
 	/* flip the pane when hovered */
-	.flip:hover .flipper, .flip.hover .flipper {
+	/*.flip:hover .flipper, .flip.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
 .flip, .front, .back {
   width: 100%;
@@ -659,9 +621,9 @@ margin-left: -70px;
 }
 
 	/* flip the pane when hovered */
-	.fliptwo:hover .flipper, .fliptwo.hover .flipper {
+	/*.fliptwo:hover .flipper, .fliptwo.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
 .fliptwo, .front, .back {
   width: 100%;
@@ -678,9 +640,9 @@ margin-left: -70px;
 }
 
 	/* flip the pane when hovered */
-	.flipthree:hover .flipper, .fliptwo.hover .flipper {
+	/*.flipthree:hover .flipper, .fliptwo.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
 .flipthree, .front, .back {
   width: 100%;
@@ -697,9 +659,9 @@ margin-left: -70px;
 }
 
 	/* flip the pane when hovered */
-	.flipfour:hover .flipper, .fliptwo.hover .flipper {
+	/*.flipfour:hover .flipper, .fliptwo.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
 .flipfour, .front, .back {
   width: 100%;
@@ -715,9 +677,9 @@ margin-left: -70px;
 }
 
 	/* flip the pane when hovered */
-	.flipthree:hover .flipper, .fliptwo.hover .flipper {
+	/*.flipthree:hover .flipper, .fliptwo.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
 .flipfive, .front, .back {
   width: 100%;
@@ -874,4 +836,180 @@ margin-top: 200px;
 margin-left: 80px;
 font-size: 15px;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*SHIRT*/
+
+.blacktop{
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 400px;
+}
+
+.blacktop h1{
+  margin-top: 300px;
+  font-size: 50px;
+}
+
+.background1 img{
+  width: 270.4px;
+  height: 270.4px;
+  background-position: center;
+  background-size: contain;
+}
+.background1 h3 {
+  margin-top: -40px;
+  margin-left: 160px;
+  padding: 8px;
+  background-color: #66d9c1;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+}
+.icons {
+  margin-right: -50px;
+  padding-left: 110px;
+
+}
+.box1 p {
+  font-weight: bold;
+  color: #3a4543;
+  text-decoration: none;
+  text-decoration-color: #3a4543;
+  font-size: 16px;
+
+}
+.background1 p {
+  padding-left: 30px;
+}
+
+
+/*section2*/
+
+
+.background2 img {
+  width: 281.4px;
+  height: 281.4px;
+  background-size: contain;
+}
+.background2 h3 {
+  margin-top: -40px;
+  margin-left: 160px;
+  padding: 8px;
+  background-color: #66d9c1;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+}
+
+.box1 {
+  text-decoration: none;
+  padding-top: 10px;
+  color: grey;
+  text-align: center;
+  border-bottom: solid lightgrey .5px;
+  border-left: solid lightgrey .5px;
+  border-right: solid lightgrey .5px;
+  width: 281.4px;
+}
+
+/*section3*/
+
+.background3 img{
+  width: 281.4px;
+  height: 281.4px;
+  background-position: center;
+  background-size: contain;
+}
+.background3 h3 {
+  margin-top: -40px;
+  margin-left: 160px;
+  padding: 8px;
+  background-color: #66d9c1;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+}
+.sale h4 {
+  margin-top: -280px;
+  padding: 7px;
+  background-color: red;
+  position: absolute;
+  color: white;
+  font-size: 12px;
+}
+.box2 {
+  text-decoration: none;
+  /*margin-bottom: -200px;*/
+  color: grey;
+  text-align: center;
+  border-bottom: solid lightgrey .5px;
+  border-left: solid lightgrey .5px;
+  border-right: solid lightgrey .5px;
+  width: 281.4px;
+  /*margin-top: 260px;*/
+  padding-top: 10px;
+}
+.box2 p {
+  font-weight: bold;
+  color: #3a4543;
+  text-decoration: none;
+  text-decoration-color: #3a4543;
+  font-size: 16px;
+
+}
+/*section4*/
+
+.background4 img{
+  width: 281.4px;
+  height: 281.4px;
+  background-position: center;
+  background-size: contain;
+}
+.background4 h3 {
+  margin-top: -40px;
+  margin-left: 160px;
+  padding: 8px;
+  background-color: #66d9c1;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+}
+.four {
+  position: absolute;
+  /*padding: 5px;
+  background-color: cyan;*/
+}
+.centerbox {
+  border-bottom: solid lightgrey .5px;
+  border-left: solid lightgrey .5px;
+  border-right: solid lightgrey .5px;
+    width: 281.4px;
+    height: 100px;
+    margin-top: -20px;
+}
+.greybox {
+  padding-top: 20px;
+}
+h3 {
+background-color: #3a4543;
+  width: 120px;
+  height: 40px;
+  font-size: 13px;
+  margin-left: 78px;
+  text-align: center;
+  padding-top: 12px;
+  color: white;
 }
