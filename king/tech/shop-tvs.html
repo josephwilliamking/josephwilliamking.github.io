@@ -1,0 +1,406 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>BeKing</title>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+// 						$('.dropdown-toggle').click(function(e) {
+//   e.preventDefault();
+//   setTimeout($.proxy(function() {
+//     if ('ontouchstart' in document.documentElement) {
+//       $(this).siblings('.dropdown-backdrop').off().remove();
+//     }
+//   }, this), 0);
+// });
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+<!-- SHARE BUTTON -->
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="../index.html"><img src="../images/logo3.png" alt=""/></a>
+					 </div>
+
+
+
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+                  <li><a href="../experiance-stuff.html">Stuff</a></li>
+						    	<li><a href="../experiance-tech.html">Tech</a></li>
+						    	<li><a href="../experiance-home-decor.html">Home Decor</a></li>
+						    	<li><a href="../experiance-clothing.html">Clothing</a></li>
+						    	<li><a href="../experiance-jewelry.html">Jewelry</a></li>
+								<li><a href="../experiance-games.html">Games</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				  <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
+                          $12.00</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="">Check out</a></div>
+							 <div class="login_button"><a href="">Login</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+
+
+
+
+
+
+
+
+
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row shop_box-top">
+        	<h3 class="m_2">Top 4K Tvs</h3>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B073PKKKYP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B073PKKKYP&linkCode=as2&tag=joeking-20&linkId=2d06202629c75682f249e3febfcbfe6a"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B073PKKKYP&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B073PKKKYP" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<!-- <span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span> -->
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01NAYM1TP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01NAYM1TP&linkCode=as2&tag=joeking-20&linkId=f60e91fd748d975223f2707f40a57377">LG Electronics OLED65C7P 65-Inch 4K Ultra HD Smart OLED TV (2017 Model)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01NAYM1TP" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01NAYM1TP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01NAYM1TP&linkCode=as2&tag=joeking-20&linkId=f60e91fd748d975223f2707f40a57377">Buy Now</a></li>
+
+						<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B01N7XLYRF/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01N7XLYRF&linkCode=as2&tag=joeking-20&linkId=cb4252f920cecb20ccaffe4933912da4"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01N7XLYRF&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01N7XLYRF" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01N7XLYRF/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01N7XLYRF&linkCode=as2&tag=joeking-20&linkId=c906305cf0ed28770ec81b897993e2bf">Sony XBR75X900E 75-Inch 4K Ultra HD Smart LED TV (2017 Model)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01N7XLYRF" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01N7XLYRF/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01N7XLYRF&linkCode=as2&tag=joeking-20&linkId=c906305cf0ed28770ec81b897993e2bf">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+				<a target="_blank"  href="https://www.amazon.com/gp/product/B06Y12LBBL/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06Y12LBBL&linkCode=as2&tag=joeking-20&linkId=39399390c12f4c36b2adba48a2d05546"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B06Y12LBBL&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06Y12LBBL" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<!-- <span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span> -->
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B06Y12LBBL/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06Y12LBBL&linkCode=as2&tag=joeking-20&linkId=ca21d7904ac9128f9eb77fb1ea2fd291">Samsung UN75MU9000 Flat 75-Inch 4K Ultra HD 9 Series SmartTV 2017</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06Y12LBBL" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B06Y12LBBL/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06Y12LBBL&linkCode=as2&tag=joeking-20&linkId=ca21d7904ac9128f9eb77fb1ea2fd291">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B01MUG21M6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01MUG21M6&linkCode=as2&tag=joeking-20&linkId=9699ac76d37f0d87a14369f048c1785e"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01MUG21M6&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01MUG21M6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01MUG21M6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01MUG21M6&linkCode=as2&tag=joeking-20&linkId=92f823fa02acc0c8074c8b04e38aa9bf">Samsung Electronics QN65Q7F 65-Inch 4K Ultra HD Smart QLED TV (2017 Model)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01MUG21M6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01MUG21M6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01MUG21M6&linkCode=as2&tag=joeking-20&linkId=92f823fa02acc0c8074c8b04e38aa9bf">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row">
+				<h3 class="m_2">Top Budget 4K Tvs</h3>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B01FWIEO6A/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01FWIEO6A&linkCode=as2&tag=joeking-20&linkId=ed592f7e775c8a2732b86f84a70b8c51"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01FWIEO6A&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01FWIEO6A" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01FWIEO6A/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01FWIEO6A&linkCode=as2&tag=joeking-20&linkId=26bff719fbe62aae8c67f30e79af8c86">Sony XBR49X800D 49-Inch 4K Ultra HD TV (2016 Model)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01FWIEO6A" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01FWIEO6A/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01FWIEO6A&linkCode=as2&tag=joeking-20&linkId=26bff719fbe62aae8c67f30e79af8c86">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B06XGC4L85/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XGC4L85&linkCode=as2&tag=joeking-20&linkId=fdfd9f1c0decafaf3682f7a636687383"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B06XGC4L85&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XGC4L85" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<!-- <span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span> -->
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B06XGC4L85/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XGC4L85&linkCode=as2&tag=joeking-20&linkId=f521e7b936c08a6885f8de28e57a934d">Samsung UN55MU9000 Flat 55-Inch 4K Ultra HD 9 Series SmartTV 2017</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XGC4L85" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B06XGC4L85/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XGC4L85&linkCode=as2&tag=joeking-20&linkId=f521e7b936c08a6885f8de28e57a934d">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B06Y6FSV5Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06Y6FSV5Q&linkCode=as2&tag=joeking-20&linkId=4a3c1036ef1b06fbe936199ae20d84c3"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B06Y6FSV5Q&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06Y6FSV5Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B06Y6FSV5Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06Y6FSV5Q&linkCode=as2&tag=joeking-20&linkId=7a34f22aa01dcd8046ea4f21fe14c657">TCL 55P607 55-Inch 4K Ultra HD Roku Smart LED TV (2017 Model)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06Y6FSV5Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B06Y6FSV5Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06Y6FSV5Q&linkCode=as2&tag=joeking-20&linkId=7a34f22aa01dcd8046ea4f21fe14c657">Buy Now</a></li>
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B06XGJX3SH/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XGJX3SH&linkCode=as2&tag=joeking-20&linkId=56601822c777f2f5eb101a8952beaf87"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B06XGJX3SH&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XGJX3SH" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<!-- <span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span> -->
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B06XGJX3SH/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XGJX3SH&linkCode=as2&tag=joeking-20&linkId=a7c0bc9fe407ad8fc0bbb8e1cc843faa">Samsung Electronics UN55MU6300 55-Inch 4K Ultra HD Smart LED TV (2017 Model)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XGJX3SH" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B06XGJX3SH/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XGJX3SH&linkCode=as2&tag=joeking-20&linkId=a7c0bc9fe407ad8fc0bbb8e1cc843faa">Buy Now</a></li>
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+
+
+
+
+
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+		 </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Products</h4>
+              <li><a href="../experiance-tech.html">Tech</a></li>
+              <li><a href="../experiance-home-decor.html">Home Decor</a></li>
+              <li><a href="../experiance-clothing.html">Clothing</a></li>
+              <li><a href="../experiance-jewelry.html">Jewelry</a></li>
+              <li><a href="../experiance-games.html">Games</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+
+							<li><a href="#">Sponserships</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="#">Contact Us</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>
+							  <li class="pinterest"><a href="#"><span> </span></a></li>
+							  <li class="youtube"><a href="#"><span> </span></a></li>
+						    </ul>
+
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© 2017 </p>
+		            </div>
+
+   				</div>
+			</div>
+		</div>
+</body>
+</html>

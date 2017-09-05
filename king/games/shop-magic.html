@@ -1,0 +1,654 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>BeKing</title>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+
+	<!-- SHARE BUTTON -->
+		<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="../index.html"><img src="../images/logo3.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+                  <li><a href="../experiance-stuff.html">Stuff</a></li>
+						    	<li><a href="../experiance-tech.html">Tech</a></li>
+						    	<li><a href="../experiance-home-decor.html">Home Decor</a></li>
+						    	<li><a href="../experiance-clothing.html">Clothing</a></li>
+						    	<li><a href="../experiance-jewelry.html">Jewelry</a></li>
+								<li><a href="../experiance-games.html">Games</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				  <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
+                          $12.00</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="">Check out</a></div>
+							 <div class="login_button"><a href="">Login</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+			   <div class="shop_top">
+		<div class="container">
+
+
+			<div class="row shop_box-top">
+				<div class="col-md-3 shop_box"><a href="single.html">
+			<a target="_blank"  href="https://www.amazon.com/gp/product/B0184884F2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0184884F2&linkCode=as2&tag=joeking-20&linkId=4f4ef17033e53eb6dabc6b935b0e4f1b"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B0184884F2&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B0184884F2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B0184884F2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0184884F2&linkCode=as2&tag=joeking-20&linkId=3a604e9a4a121aaeafba5b2105cac6bc">StarCityGames X4 Binder - Black</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B0184884F2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B0184884F2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0184884F2&linkCode=as2&tag=joeking-20&linkId=3a604e9a4a121aaeafba5b2105cac6bc">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+
+
+
+				<div class="col-md-3 shop_box"><a href="single.html">
+				<a target="_blank"  href="https://www.amazon.com/gp/product/B01848W86I/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848W86I&linkCode=as2&tag=joeking-20&linkId=4440978bfaa3dc1e46f834b50e799c2d"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01848W86I&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01848W86I" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+					<a target="_blank" href="https://www.amazon.com/gp/product/B01848W86I/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848W86I&linkCode=as2&tag=joeking-20&linkId=1fc59b571d1f28e5feea2f10e60397f9">StarCityGames X4 Binder - Red</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01848W86I" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01848W86I/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848W86I&linkCode=as2&tag=joeking-20&linkId=1fc59b571d1f28e5feea2f10e60397f9">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+
+
+
+
+
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B01848NW0Y/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848NW0Y&linkCode=as2&tag=joeking-20&linkId=47187f37505f33d77c4780b9d5f8b586"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01848NW0Y&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01848NW0Y" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01848NW0Y/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848NW0Y&linkCode=as2&tag=joeking-20&linkId=556c00b3eb2b45dfd74cf12399f1f56b">StarCityGames X4 Binder - Blue</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01848NW0Y" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01848NW0Y/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848NW0Y&linkCode=as2&tag=joeking-20&linkId=556c00b3eb2b45dfd74cf12399f1f56b">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+
+
+
+
+				<div class="col-md-3 shop_box"><a href="single.html">
+				<a target="_blank"  href="https://www.amazon.com/gp/product/B01848QYF4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848QYF4&linkCode=as2&tag=joeking-20&linkId=276dc6626f5ecd8c83edd6070fc1d6e7"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01848QYF4&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01848QYF4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01848QYF4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848QYF4&linkCode=as2&tag=joeking-20&linkId=6ce70360305f9ff05acd4efd1fd2a689">StarCityGames X4 Binder - Green</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01848QYF4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01848QYF4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01848QYF4&linkCode=as2&tag=joeking-20&linkId=6ce70360305f9ff05acd4efd1fd2a689">Buy Now</a></li>
+
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<div class="row shop_box-top">
+							<div class="col-md-3 shop_box"><a href="single.html">
+						<a target="_blank"  href="https://www.amazon.com/gp/product/B019Z2CMY0/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CMY0&linkCode=as2&tag=joeking-20&linkId=f01bd81ba61d47008151a3dd59d41ca2"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B019Z2CMY0&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019Z2CMY0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								<span class="new-box">
+									<span class="new-label">New</span>
+								</span>
+								<span class="sale-box">
+									<span class="sale-label">Sale!</span>
+								</span>
+								<div class="shop_desc">
+								<a target="_blank" href="https://www.amazon.com/gp/product/B019Z2CMY0/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CMY0&linkCode=as2&tag=joeking-20&linkId=1e43cc3b57e8574ee0a85871ba80b590">Quad row Zipfolio Xenoskin Card Sleeves, Petrol</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019Z2CMY0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+									<span class="reducedfrom">$66.00</span>
+									<span class="actual">$12.00</span><br>
+									<ul class="buttons">
+										<li class="cart"><a href="https://www.amazon.com/gp/product/B019Z2CMY0/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CMY0&linkCode=as2&tag=joeking-20&linkId=1e43cc3b57e8574ee0a85871ba80b590">Buy Now</a></li>
+
+										<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+										<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+										<div class="clear"> </div>
+								    </ul>
+							    </div>
+							</a></div>
+
+
+
+
+
+							<div class="col-md-3 shop_box"><a href="single.html">
+							<a target="_blank"  href="https://www.amazon.com/gp/product/B019Z2CN44/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CN44&linkCode=as2&tag=joeking-20&linkId=e60c9c7aa465ba12a69539cf06331a2b"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B019Z2CN44&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019Z2CN44" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								<span class="new-box">
+									<span class="new-label">New</span>
+								</span>
+								<div class="shop_desc">
+									<a target="_blank" href="https://www.amazon.com/gp/product/B019Z2CN44/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CN44&linkCode=as2&tag=joeking-20&linkId=87814f3b9c051c916626e4f2a5f05334">Quad row Zipfolio Xenoskin Card Sleeves, Green</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019Z2CN44" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+									<span class="actual">$12.00</span><br>
+									<ul class="buttons">
+										<li class="cart"><a href="https://www.amazon.com/gp/product/B019Z2CN44/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CN44&linkCode=as2&tag=joeking-20&linkId=87814f3b9c051c916626e4f2a5f05334">Buy Now</a></li>
+
+										<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+										<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+										<div class="clear"> </div>
+								    </ul>
+							    </div>
+							</a></div>
+
+
+
+
+
+							<div class="col-md-3 shop_box"><a href="single.html">
+								<a target="_blank"  href="https://www.amazon.com/gp/product/B019Z2CMXQ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CMXQ&linkCode=as2&tag=joeking-20&linkId=f11b9b00c44664a15fe0f81055b16bd8"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B019Z2CMXQ&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019Z2CMXQ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								<span class="new-box">
+									<span class="new-label">New</span>
+								</span>
+								<span class="sale-box">
+									<span class="sale-label">Sale!</span>
+								</span>
+								<div class="shop_desc">
+									<a target="_blank" href="https://www.amazon.com/gp/product/B019Z2CMXQ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CMXQ&linkCode=as2&tag=joeking-20&linkId=659d5ff3a3e47d83df08f2042db42b12">Quad row Zipfolio Xenoskin Card Sleeves, Red</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019Z2CMXQ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+									<span class="reducedfrom">$66.00</span>
+									<span class="actual">$12.00</span><br>
+									<ul class="buttons">
+										<li class="cart"><a href="https://www.amazon.com/gp/product/B019Z2CMXQ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019Z2CMXQ&linkCode=as2&tag=joeking-20&linkId=659d5ff3a3e47d83df08f2042db42b12">Buy Now</a></li>
+
+										<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+										<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+										<div class="clear"> </div>
+								    </ul>
+							    </div>
+							</a></div>
+
+
+
+
+
+
+							<div class="col-md-3 shop_box"><a href="single.html">
+								<a target="_blank"  href="https://www.amazon.com/gp/product/B0184884F2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0184884F2&linkCode=as2&tag=joeking-20&linkId=f33490ff19dca2c70473a958e60cda3a"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B0184884F2&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B0184884F2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								<span class="new-box">
+									<span class="new-label">New</span>
+								</span>
+								<div class="shop_desc">
+								<a target="_blank" href="https://www.amazon.com/gp/product/B0184884F2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0184884F2&linkCode=as2&tag=joeking-20&linkId=25cca9e441a7d19e7c1d47d15c47810e">StarCityGames X4 Binder - Black</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B0184884F2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+									<span class="reducedfrom">$66.00</span>
+									<span class="actual">$12.00</span><br>
+									<ul class="buttons">
+										<li class="cart"><a href="https://www.amazon.com/gp/product/B0184884F2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0184884F2&linkCode=as2&tag=joeking-20&linkId=25cca9e441a7d19e7c1d47d15c47810e">Buy Now</a></li>
+										<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+
+										<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+										<div class="clear"> </div>
+								    </ul>
+							    </div>
+							</a></div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="row shop_box-top">
+										<div class="col-md-3 shop_box"><a href="single.html">
+									<a target="_blank"  href="https://www.amazon.com/gp/product/B016CWIEMK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B016CWIEMK&linkCode=as2&tag=joeking-20&linkId=3f13fec45d49e2088500b67e37c1389e"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B016CWIEMK&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B016CWIEMK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+											<span class="new-box">
+												<span class="new-label">New</span>
+											</span>
+											<span class="sale-box">
+												<span class="sale-label">Sale!</span>
+											</span>
+											<div class="shop_desc">
+												<a target="_blank" href="https://www.amazon.com/gp/product/B016CWIEMK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B016CWIEMK&linkCode=as2&tag=joeking-20&linkId=d380db8f4fc7ace86961194b6bc76f89">200 Card Twin Flip N Tray Xenoskin Deck Case, Black</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B016CWIEMK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+												<span class="reducedfrom">$66.00</span>
+												<span class="actual">$12.00</span><br>
+												<ul class="buttons">
+													<li class="cart"><a href="https://www.amazon.com/gp/product/B016CWIEMK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B016CWIEMK&linkCode=as2&tag=joeking-20&linkId=d380db8f4fc7ace86961194b6bc76f89">Buy Now</a></li>
+
+													<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+													<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+													<div class="clear"> </div>
+											    </ul>
+										    </div>
+										</a></div>
+
+
+
+
+
+										<div class="col-md-3 shop_box"><a href="single.html">
+											<a target="_blank"  href="https://www.amazon.com/gp/product/B00MMRH0MK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMRH0MK&linkCode=as2&tag=joeking-20&linkId=dd8ca1a2df358fa97c6bea9b2f2fca5c"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00MMRH0MK&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMRH0MK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+											<span class="new-box">
+												<span class="new-label">New</span>
+											</span>
+											<div class="shop_desc">
+												<a target="_blank" href="https://www.amazon.com/gp/product/B00MMRH0MK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMRH0MK&linkCode=as2&tag=joeking-20&linkId=6fa9b23b22c05f62894b759799a252be">1X ULTRA PRO LIGHT BLUE Satin Tower Deck Box MTG MAGIC the Gathering POKEMON Holds 100 Cards</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMRH0MK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+												<span class="actual">$12.00</span><br>
+												<ul class="buttons">
+													<li class="cart"><a href="https://www.amazon.com/gp/product/B00MMRH0MK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMRH0MK&linkCode=as2&tag=joeking-20&linkId=6fa9b23b22c05f62894b759799a252be">Buy Now</a></li>
+
+													<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+													<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+													<div class="clear"> </div>
+											    </ul>
+										    </div>
+										</a></div>
+
+
+
+
+
+										<div class="col-md-3 shop_box"><a href="single.html">
+											<a target="_blank"  href="https://www.amazon.com/gp/product/B014CXONQW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B014CXONQW&linkCode=as2&tag=joeking-20&linkId=9a4866120758606be3dacac4bb5481fb"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B014CXONQW&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B014CXONQW" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+											<span class="new-box">
+												<span class="new-label">New</span>
+											</span>
+											<span class="sale-box">
+												<span class="sale-label">Sale!</span>
+											</span>
+											<div class="shop_desc">
+												<a target="_blank" href="https://www.amazon.com/gp/product/B014CXONQW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B014CXONQW&linkCode=as2&tag=joeking-20&linkId=7b599f11a801ccc8f27083e56d61f72a">ULTRA PRO MTG BRIGHT PINK SATIN Tower Deck Box *NEW* Storage Compartments Gaming</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B014CXONQW" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+												<span class="reducedfrom">$66.00</span>
+												<span class="actual">$12.00</span><br>
+												<ul class="buttons">
+													<li class="cart"><a href="https://www.amazon.com/gp/product/B014CXONQW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B014CXONQW&linkCode=as2&tag=joeking-20&linkId=7b599f11a801ccc8f27083e56d61f72a">Buy Now</a></li>
+
+													<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+													<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+													<div class="clear"> </div>
+											    </ul>
+										    </div>
+										</a></div>
+
+
+
+
+										<div class="col-md-3 shop_box"><a href="single.html">
+											<a target="_blank"  href="https://www.amazon.com/gp/product/B00MMPI0KS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMPI0KS&linkCode=as2&tag=joeking-20&linkId=e871711c98ab2596f2a5a59417312365"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00MMPI0KS&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMPI0KS" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+											<span class="new-box">
+												<span class="new-label">New</span>
+											</span>
+											<div class="shop_desc">
+												<a target="_blank" href="https://www.amazon.com/gp/product/B00MMPI0KS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMPI0KS&linkCode=as2&tag=joeking-20&linkId=1ec660bf287f596982fc5a23d3befba1">1X ULTRA PRO WHITE Satin Tower Deck Box MTG MAGIC the Gathering POKEMON Holds 100 Cards</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMPI0KS" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+												<span class="reducedfrom">$66.00</span>
+												<span class="actual">$12.00</span><br>
+												<ul class="buttons">
+													<li class="cart"><a href="https://www.amazon.com/gp/product/B00MMPI0KS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMPI0KS&linkCode=as2&tag=joeking-20&linkId=1ec660bf287f596982fc5a23d3befba1">Buy Now</a></li>
+
+													<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+													<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+													<div class="clear"> </div>
+											    </ul>
+										    </div>
+										</a></div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row">
+				<div class="col-md-3 shop_box"><a href="single.html">
+				<a target="_blank"  href="https://www.amazon.com/gp/product/B00AF8237K/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AF8237K&linkCode=as2&tag=joeking-20&linkId=371ba1e3afffbb8fb5c53c4ac5dc1c6c"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00AF8237K&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00AF8237K" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B00AF8237K/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AF8237K&linkCode=as2&tag=joeking-20&linkId=54f705c75659baa7975cdf4ba86a1e45">Ultra Pro Black Satin Tower Deck Boxes</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00AF8237K" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B00AF8237K/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AF8237K&linkCode=as2&tag=joeking-20&linkId=54f705c75659baa7975cdf4ba86a1e45">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+
+
+
+
+
+				<div class="col-md-3 shop_box"><a href="single.html">
+			<a target="_blank"  href="https://www.amazon.com/gp/product/B00MMP7S0Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMP7S0Q&linkCode=as2&tag=joeking-20&linkId=9ce8bbf8f366976fc9ff6b5f5a8fbe05"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00MMP7S0Q&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMP7S0Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B00MMP7S0Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMP7S0Q&linkCode=as2&tag=joeking-20&linkId=d2111a09bd8c729ad6a3c64384aa87da">1X ULTRA PRO RED Satin Tower Deck Box MTG MAGIC the Gathering POKEMON Holds 100 Cards</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMP7S0Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B00MMP7S0Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMP7S0Q&linkCode=as2&tag=joeking-20&linkId=d2111a09bd8c729ad6a3c64384aa87da">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+
+
+
+
+
+
+				<div class="col-md-3 shop_box"><a href="single.html">
+			<a target="_blank"  href="https://www.amazon.com/gp/product/B00MMPSHWO/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMPSHWO&linkCode=as2&tag=joeking-20&linkId=dfdf553b53ed1697d0ed430794de396f"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00MMPSHWO&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMPSHWO" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B00MMPSHWO/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMPSHWO&linkCode=as2&tag=joeking-20&linkId=2047cb9ca11b3e93482a19bf12f6a0c1">1X ULTRA PRO GREEN Satin Tower Deck Box MTG MAGIC the Gathering POKEMON Holds 100 Cards</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MMPSHWO" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B00MMPSHWO/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MMPSHWO&linkCode=as2&tag=joeking-20&linkId=2047cb9ca11b3e93482a19bf12f6a0c1">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+
+
+
+
+
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B01LWIAOR9/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01LWIAOR9&linkCode=as2&tag=joeking-20&linkId=d34a9eb00dab03e38cbefcbc74787204"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01LWIAOR9&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01LWIAOR9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01LWIAOR9/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01LWIAOR9&linkCode=as2&tag=joeking-20&linkId=d31c0668cd8a1f47ac2ae07bd9308c31">1X ULTRA PRO Lime Green Satin Tower Deck Box MTG MAGIC the Gathering POKEMON Holds 100 Cards by Ultra Pro</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01LWIAOR9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01LWIAOR9/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01LWIAOR9&linkCode=as2&tag=joeking-20&linkId=d31c0668cd8a1f47ac2ae07bd9308c31">Buy Now</a></li>
+
+							<div class="fb-share-button shop_btn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+							<!-- <li class="shop_btn"><a href="#">Read More</a></li> -->
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Products</h4>
+              <li><a href="../experiance-tech.html">Tech</a></li>
+              <li><a href="../experiance-home-decor.html">Home Decor</a></li>
+              <li><a href="../experiance-clothing.html">Clothing</a></li>
+              <li><a href="../experiance-jewelry.html">Jewelry</a></li>
+              <li><a href="../experiance-games.html">Games</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+
+							<li><a href="#">Sponserships</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="#">Contact Us</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>
+							  <li class="pinterest"><a href="#"><span> </span></a></li>
+							  <li class="youtube"><a href="#"><span> </span></a></li>
+						    </ul>
+
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© 2017 </p>
+		            </div>
+
+   				</div>
+			</div>
+		</div>
+</body>
+</html>
