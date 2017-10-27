@@ -2155,7 +2155,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
             height: 50rem;
             will-change: transform;
             overflow: hidden;
-            background: url('../JerseyFly/img/slider/slide7.jpg') no-repeat;
+            background: url('../JerseyFLy/img/slider/slide7.jpg') no-repeat;
             background-size: cover;
             background-position: center center;
             transition: width 150ms ease-out;
@@ -2167,7 +2167,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
         }
         @media (min-width:750px) {
             .page-section .jersey {
-                background: url('../JerseyFly/img/slider/slide7.jpg') no-repeat;
+                background: url('../JerseyFLy/img/slider/slide7.jpg') no-repeat;
                 background-size: cover;
                 background-position: center center;
             }
@@ -2184,7 +2184,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
                 transform: translate3d(0, -50%, 0);
                 will-change: transform;
                 overflow: hidden;
-                background: url('../JerseyFly/img/slider/slide7.jpg') no-repeat;
+                background: url('../JerseyFLy/img/slider/slide7.jpg') no-repeat;
                 background-size: cover;
                 background-position: center center;
                 transition: all 150ms ease-out;
