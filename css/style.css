@@ -1814,7 +1814,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
             height: 50rem;
             will-change: transform;
             overflow: hidden;
-            background: url('../images/zeitraum/wallup-2629961.jpg') no-repeat;
+            background: url('../images/zeitraum/ibm4.jpg') no-repeat;
             background-size: cover;
             background-position: 25% center;
             transition: width 150ms ease-out;
@@ -1826,7 +1826,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
         }
         @media (min-width:750px) {
             .page-section ._animation_zeitraum {
-                background: url('../images/zeitraum/wallup-2629961.jpg') no-repeat;
+                background: url('../images/zeitraum/ibm4.jpg') no-repeat;
                 background-size: cover;
                 background-position: 25% center;
             }
@@ -1843,7 +1843,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
                 transform: translate3d(0, -50%, 0);
                 will-change: transform;
                 overflow: hidden;
-                background: url('../images/zeitraum/wallup-2629961.jpg') no-repeat;
+                background: url('../images/zeitraum/ibm4.jpg') no-repeat;
                 background-size: cover;
                 background-position: center;
                 transition: all 150ms ease-out;
