@@ -1,3 +1,466 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Geek Chic</title>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+  <div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="../index.html"><img src="../images/logo3.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+                  <li><a href="../experience-stuff.html">Laugh</a></li>
+                  <li><a href="../experience-tech.html">Tech & Gadgets</a></li>
+                  <li><a href="../experience-home-decor.html">Home Decor</a></li>
+                  <li><a href="../experience-clothing.html">Clothing</a></li>
+                  <li><a href="../experience-jewelry.html">Jewelry</a></li>
+                <li><a href="../experience-games.html">Games</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				   <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="#">Stranger Things Funko Pop</a></h4><span class="actual">1 x
+                          $12.00</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="">Check out</a></div>
+							 <div class="login_button"><a href="">Login</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+
+
+
+
+
+
+
+
+
+
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row shop_box-top">
+					<h3 class="m_2">Top Bookshelf Speakers</h3>
+				<div class="col-md-3 shop_box"><a href="single.html">
+				<a target="_blank"  href="https://www.amazon.com/gp/product/B01CRYWVG2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01CRYWVG2&linkCode=as2&tag=joeking-20&linkId=a18b19c71a26884a91a3c1eaf71461a6"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01CRYWVG2&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01CRYWVG2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+					<a target="_blank" href="https://www.amazon.com/gp/product/B01CRYWVG2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01CRYWVG2&linkCode=as2&tag=joeking-20&linkId=e3c4457326b86dfa60cad209a809794a">ELAC Uni-fi UB5 Bookshelf Speaker (Black, Pair)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01CRYWVG2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+								<li class="cart"><a href="https://www.amazon.com/gp/product/B01CRYWVG2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01CRYWVG2&linkCode=as2&tag=joeking-20&linkId=e3c4457326b86dfa60cad209a809794a">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B071VYGRML/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B071VYGRML&linkCode=as2&tag=joeking-20&linkId=50a67f384f70031aec74da0b0a060175"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B071VYGRML&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B071VYGRML" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B071VYGRML/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B071VYGRML&linkCode=as2&tag=joeking-20&linkId=7f3d34b7130bcf4ca76aa70f714ca81f">KEF Q350 Bookshelf Speakers (Pair, Black)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B071VYGRML" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B071VYGRML/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B071VYGRML&linkCode=as2&tag=joeking-20&linkId=7f3d34b7130bcf4ca76aa70f714ca81f">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+				<a target="_blank"  href="https://www.amazon.com/gp/product/B00MQEE4M8/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MQEE4M8&linkCode=as2&tag=joeking-20&linkId=7df4cc11323a015fec68b8f10c39d91e"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00MQEE4M8&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MQEE4M8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B00MQEE4M8/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MQEE4M8&linkCode=as2&tag=joeking-20&linkId=8e4939967729ed1b41f9e812225f705e">Pioneer Elite SP-EBS73 Dolby Atmos-enabled Andrew Jones Bookshelf Speakers (Pair)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00MQEE4M8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B00MQEE4M8/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MQEE4M8&linkCode=as2&tag=joeking-20&linkId=8e4939967729ed1b41f9e812225f705e">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+				<a target="_blank"  href="https://www.amazon.com/gp/product/B01A5UB4JU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01A5UB4JU&linkCode=as2&tag=joeking-20&linkId=262fce96c29a80cd5be5b940038e324d"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01A5UB4JU&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01A5UB4JU" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01A5UB4JU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01A5UB4JU&linkCode=as2&tag=joeking-20&linkId=d3f5dadc00427ddf33f5c184c7df8a6b">Fluance Signature Series HiFi Two-way Bookshelf Surround Sound Speakers for Home Theater and Music Systems (HFS)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01A5UB4JU" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01A5UB4JU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01A5UB4JU&linkCode=as2&tag=joeking-20&linkId=d3f5dadc00427ddf33f5c184c7df8a6b">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row">
+				<h3 class="m_2">Top Tower Speakers</h3>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B00ZB6G7E6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00ZB6G7E6&linkCode=as2&tag=joeking-20&linkId=b8375b8d37ccdad9f57968558873669e"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00ZB6G7E6&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00ZB6G7E6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B00ZB6G7E6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00ZB6G7E6&linkCode=as2&tag=joeking-20&linkId=8f6d9b52a9669873233d5993d77741b8">Klipsch RP-280FA Floorstanding Speaker - Black Veneer (Each)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00ZB6G7E6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B00ZB6G7E6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00ZB6G7E6&linkCode=as2&tag=joeking-20&linkId=8f6d9b52a9669873233d5993d77741b8">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B01N220I6M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01N220I6M&linkCode=as2&tag=joeking-20&linkId=975c56c42988cf9c2c83b1f4336e5867"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01N220I6M&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01N220I6M" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01N220I6M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01N220I6M&linkCode=as2&tag=joeking-20&linkId=1733215f9b13fec80477c564729f3473">ELAC - Debut F6 Tower Speakers (Black, Pair)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01N220I6M" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01N220I6M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01N220I6M&linkCode=as2&tag=joeking-20&linkId=1733215f9b13fec80477c564729f3473">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B00BPQWPME/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00BPQWPME&linkCode=as2&tag=joeking-20&linkId=6ff79263cc3aa64ce9fe8ce57689f76d"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00BPQWPME&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00BPQWPME" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B00BPQWPME/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00BPQWPME&linkCode=as2&tag=joeking-20&linkId=dfa04cc8cf2561a251feeee51cb36a56">SVS Ultra Tower Flagship 3-Way Loudspeaker (Piano Gloss Single)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00BPQWPME" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B00BPQWPME/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00BPQWPME&linkCode=as2&tag=joeking-20&linkId=dfa04cc8cf2561a251feeee51cb36a56">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B019YBHOOA/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019YBHOOA&linkCode=as2&tag=joeking-20&linkId=a76007f131f7a7f6e1962c794c67d6c3"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B019YBHOOA&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019YBHOOA" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B019YBHOOA/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019YBHOOA&linkCode=as2&tag=joeking-20&linkId=6f7a7e2a381387e437409155a6b53f33">Fluance Signature Series Hi-Fi Three-way Floorstanding Tower Speakers with Dual 8" Woofers (HFF)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B019YBHOOA" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B019YBHOOA/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B019YBHOOA&linkCode=as2&tag=joeking-20&linkId=6f7a7e2a381387e437409155a6b53f33">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row">
+				<h3 class="m_2">Top Bluetooth</h3>
+
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B00HWSXVDG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00HWSXVDG&linkCode=as2&tag=joeking-20&linkId=3b768278349fb9a15a8b69fb768628fb"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00HWSXVDG&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00HWSXVDG" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B00HWSXVDG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00HWSXVDG&linkCode=as2&tag=joeking-20&linkId=31f92e2722d02795b5ece6cc93ec7059">Bose SoundLink Bluetooth Speaker III</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B00HWSXVDG" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B00HWSXVDG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00HWSXVDG&linkCode=as2&tag=joeking-20&linkId=31f92e2722d02795b5ece6cc93ec7059">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B06XCW4VFS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XCW4VFS&linkCode=as2&tag=joeking-20&linkId=29951ecd68b993fea5055f0525c24afa"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B06XCW4VFS&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XCW4VFS" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B06XCW4VFS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XCW4VFS&linkCode=as2&tag=joeking-20&linkId=4d1b68b0928d927b0e310db3dccb29e6">Bose SoundLink Revolve+ Bluetooth Speaker, Triple Black</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XCW4VFS" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B06XCW4VFS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XCW4VFS&linkCode=as2&tag=joeking-20&linkId=4d1b68b0928d927b0e310db3dccb29e6">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B01HETFPK4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01HETFPK4&linkCode=as2&tag=joeking-20&linkId=5a5872021dd9b58bb5f8b8fceef26cdf"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01HETFPK4&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01HETFPK4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B01HETFPK4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01HETFPK4&linkCode=as2&tag=joeking-20&linkId=d9dd236c712f8e9b01a2aaeb04ec9735">Bose SoundLink Color Bluetooth Speaker II - Aquatic Blue</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B01HETFPK4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B01HETFPK4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01HETFPK4&linkCode=as2&tag=joeking-20&linkId=d9dd236c712f8e9b01a2aaeb04ec9735">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<a target="_blank"  href="https://www.amazon.com/gp/product/B06XT3H8T3/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XT3H8T3&linkCode=as2&tag=joeking-20&linkId=cab5e7374a50ef926b0a9da56b48e977"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B06XT3H8T3&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=joeking-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XT3H8T3" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+					<span class="new-box">
+						<span class="new-label">New</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Sale!</span>
+					</span>
+					<div class="shop_desc">
+						<a target="_blank" href="https://www.amazon.com/gp/product/B06XT3H8T3/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XT3H8T3&linkCode=as2&tag=joeking-20&linkId=04aaaea6e2ce5b98b0efeec0be165dc1">UE&nbsp;WONDERBOOM&nbsp;Super Portable Waterproof Bluetooth Speaker (Lilac)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=joeking-20&l=am2&o=1&a=B06XT3H8T3" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://www.amazon.com/gp/product/B06XT3H8T3/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XT3H8T3&linkCode=as2&tag=joeking-20&linkId=04aaaea6e2ce5b98b0efeec0be165dc1">Buy Now</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+
+
+
+		 </div>
+	   </div>
+	  </div>
+
+		<div id="disqus_thread"></div>
+		<script>
+
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://josephwilliamking-github-io.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+		<!-- <script src="//www.powr.io/powr.js" external-type="html"></script>
+		 <div class="powr-comments" id="a6da28c3_1505508997"></div> -->
+
+
+
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Products</h4>
+              <li><a href="../experiance-tech.html">Tech</a></li>
+              <li><a href="../experiance-home-decor.html">Home Decor</a></li>
+              <li><a href="../experiance-clothing.html">Clothing</a></li>
+              <li><a href="../experiance-jewelry.html">Jewelry</a></li>
+              <li><a href="../experiance-games.html">Games</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+
+							<li><a href="#">Sponserships</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="#">Contact Us</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>
+							  <li class="pinterest"><a href="#"><span> </span></a></li>
+							  <li class="youtube"><a href="#"><span> </span></a></li>
+						    </ul>
+
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© 2017 </p>
+		            </div>
+
+   				</div>
+			</div>
+		</div>
+</body>
+</html>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
