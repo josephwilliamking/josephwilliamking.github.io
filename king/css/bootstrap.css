@@ -1,10 +1,4 @@
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1105,6 +1099,8 @@ pre code {
   }
   .col-md-7 {
     width: 58.33333333%;
+    background-color: black;
+    padding: 20px 30px 40px 40px;
   }
   .col-md-6 {
     width: 50%;
