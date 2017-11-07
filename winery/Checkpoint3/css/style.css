@@ -132,7 +132,10 @@ article:after {
     font-weight: lighter;
     color: white;
     font-size: 15px;
-    padding-top: 90px;
+    padding-top: 40px;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
 }
 .paragraph h1 {
     font-size: 30px;
@@ -431,7 +434,19 @@ body {
 
 
 
-/*@media (max-width: 768px) {
-.button {
-margin-right: 30px;
-}*/
+@media (max-width: 768px) {
+  .button2 {
+      height: 35px;
+      width: 120px;
+      background-color: #91a05c;
+      margin-top: 30px;
+      padding-top: 5px;
+      margin-left: 110px;
+  }
+  .button2 a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 18px;
+  }
+}
