@@ -2106,7 +2106,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
             height: 50rem;
             will-change: transform;
             overflow: hidden;
-            background: url('../images/guardians.jpg') no-repeat;
+            background: url('../images/Guardians.jpg') no-repeat;
             background-size: cover;
             background-position: 25% center;
             transition: width 150ms ease-out;
@@ -2118,7 +2118,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
         }
         @media (min-width:750px) {
             .page-section ._animation_proto {
-                background: url('../images/guardians.jpg') no-repeat;
+                background: url('../images/Guardians.jpg') no-repeat;
                 background-size: cover;
                 background-position: 25% center;
             }
@@ -2134,7 +2134,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
                 transform: translate3d(0, -50%, 0);
                 will-change: transform;
                 overflow: hidden;
-                background: url('../images/guardians.jpg') no-repeat;
+                background: url('../images/Guardians.jpg') no-repeat;
                 background-size: cover;
                 background-position: center;
                 transition: width 150ms ease-out;
