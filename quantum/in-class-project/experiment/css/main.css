@@ -475,6 +475,12 @@ tr th {
   left: 0
 }
 
+.u-absolute2 {
+  position: relative;
+  margin-top: -300px;
+}
+
+
 .u-pos-tr {
   top: 0;
   right: 0

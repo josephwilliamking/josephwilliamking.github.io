@@ -475,13 +475,19 @@ tr th {
   left: 0
 }
 
+.u-absolute2 {
+object-position: center;
+  margin-top: -450px;
+  object-fit: cover;
+}
+
 .u-pos-tr {
   top: 0;
   right: 0
 }
 
 .u-object-fit-cover {
-  object-fit: cover
+  object-fit: cover;
 }
 
 .u-fit {
