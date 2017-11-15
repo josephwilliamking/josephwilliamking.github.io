@@ -74,9 +74,17 @@
 #fwslider .slide_content_wrap { /* Slider Text Content Container Style */
     max-width: 600px;
 	margin: 12% auto;
+
 }
 #fwslider .title {  /* Slider Title Style */
 	color: #FFF;
+  text-shadow:
+	1px 1px 0 black,
+	2px 2px 0 black, /* end of 2 level deep grey shadow */
+	3px 3px 0 black,
+	4px 4px 0 black,
+	5px 5px 0 black,
+	6px 6px 0 black; /* end of 4 level deep dark shadow */
 	font-size: 5em;
 	padding-top: 5%;
 	font-style: normal;
@@ -85,6 +93,7 @@
 	font-weight: 800;
 	line-height: 1.3em;
 	margin-bottom: 5%;
+
 }
 /* ------------------------------- 4. Media Query Max Width 1300, Min Width 720 ------------------------------- */
 /* ------------------------------- 5. Media Query Max Width 719 ------------------------------- */
