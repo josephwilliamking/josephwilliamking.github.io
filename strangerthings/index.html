@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Stranger Things</title>
+  <meta name="description" content="" />
+
+
+  <!-- font loading -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Karla:700,400,400italic,700normal,700italic"/>
+
+  <!-- user scripts / style -->
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body class="landing">
+  <div id="container">
+    <div id="content">
+
+      <audio class="bg-loop" loop>
+        <source src="./assets/audio/things.wav" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <div>
+        <audio class="fadeable" id="kiki">
+          <source src="./assets/audio/bad_place.mp3" type="audio/mp3" />
+        </audio>
+        <audio class="fadeable" id="robert">
+          <source src="./assets/audio/shut_up.mp3" type="audio/mp3" />
+        </audio>
+        <audio class="fadeable" id="tony">
+          <source src="./assets/audio/will.mp3" type="audio/mp3" />
+        </audio>
+        <audio class="fadeable" id="wanda">
+          <source src="./assets/audio/demagorgan.mp3" type="audio/mp3" />
+        </audio>
+        <audio class="fadeable" id="ginger">
+          <source src="./assets/audio/dustins_pudding.mp3" type="audio/mp3" />
+        </audio>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-control top">
+          <div class="dot"></div>
+          <div class="dot center"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="menu-control bottom hidden">
+          <div class="dot"></div>
+          <div class="dot center"></div>
+          <div class="dot"></div>
+        </div>
+        <ul class="main-menu">
+          <li class="menu-item hash break" data-link="nine">
+            <div class="inner-wrap bold is-active">
+              <span>Stranger Things</span>
+            </div>
+          </li>
+          <li class="menu-item hash break js-open-lower" data-link="crew">
+            <div class="inner-wrap bold">
+              <span>The Cast</span>
+            </div>
+          </li>
+          <li class="menu-item hash break-last js-open-lower" data-link="about">
+            <div class="inner-wrap bold"><span>About</span></div>
+          </li>
+          <!-- <li class="menu-item share" data-trigger="share-list">
+            <div class="inner-wrap">
+              <span class="links share-trigger" >SHARE</span>
+            </div>
+            <ul class="share-list">
+              <li class="twitter share-item">
+                <a href="https://twitter.com/stranger_things.com" target="_blank">
+                  <img src="./assets/img/twitter.svg" alt="">
+                </a>
+              </li>
+              <li class="facebook share-item">
+                <a href="https://www.facebook.com/StrangerThingsTV/" target="_blank">
+                  <img src="./assets/img/facebook.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </li> -->
+
+          <li class="menu-item contact" data-trigger="contact-wrapper">
+            <div class="inner-wrap">
+              <span class="links contact-trigger">CONTACT</span>
+            </div>
+            <div class="contact-wrapper">
+              <ul class="list-inline share-list clearfix">
+                <li class="list-item"><a href="https://www.facebook.com/StrangerThingsTV/" target="_blank">Facebook /</a></li>
+                <li class="list-item"><a href="https://twitter.com/stranger_things" target="_blank">Twitter /</a></li>
+                <li class="list-item"><a href="https://www.instagram.com/strangerthingstv/" target="_blank">Instagram</a></li>
+              </ul>
+              <!-- <span class="paragraph description">Festivals, Sales &amp; Distribution Inquiries:</span>
+              <span class="paragraph description">Marc Smolowitz - <a href="mailto:marcsmolowitz@gmail.com">marcsmolowitz@gmail.com</a></span> -->
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <div class="inner-wrap">
+              <span><i class="icon icon-38 icon-sound"></i></span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="signup is-hidden">
+        <div class="control"><img src="./assets/img/newsletter.png" class="signup-control"></div>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//theninefilm.us11.list-manage.com/subscribe/post?u=a20f0db96243a9c451bd468aa&amp;id=28748445d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email" placeholder="EMAIL ADDRESS" id="mce-EMAIL">
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_a20f0db96243a9c451bd468aa_28748445d7" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="FOLLOW OUR STORY" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="background-fade-container">
+        <div class="background-fade underwater trans">
+          <video autoplay="true" loop>
+            <source src="./assets/img/video/Loops_Underwater_Rope_V2_4mbps.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="background-fade walk">
+          <video autoplay="true" loop>
+            <source src="./assets/img/video/Loops_BJ_walks_V2_2mbps.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="background-fade" style="background: black;"></div>
+
+        <div class="background-fade footprints">
+          <video autoplay="true" loop>
+            <source src="./assets/img/video/Loops_Footprints_V2_4mbps.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="content-wrapper clearfix">
+        <div id="nine" class="flex-fix">
+          <div class="flex-container">
+            <div class="centered">
+              <div class="hero is-hidden">
+                <img class="thenine-img" src="./assets/img/logo1.webp" alt="THE NINE">
+                <!-- <img class="thenine-img" src="./assets/img/TitleKatyGrannan.png" > -->
+                <div class="meta">
+                  <a href="https://vimeo.com/245801538" class="video-link video-trigger button" data-rel="245801538" data-video="1">
+                    Play the trailer
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="down">
+              <h4 class="header-sub">EXPLORE</h4>
+              <span class="down-arrow">&darr;</span>
+            </div>
+          </div>
+
+          <div class="flex-container" id="intro">
+            <div class="centered">
+              <h2 class="header vertical-push">YOU BETTER RUN! She's our friend and shes crazy! <span class="quote-author pull-right">Dustin</span></h2>
+              <div class="wrapper-small mobile-adjust clearfix">
+                <p class="description paragraph">Stranger Things is set in the fictional rural town of Hawkins, Indiana, during the early 1980s. The nearby Hawkins National Laboratory ostensibly performs scientific research for the United States Department of Energy, but secretly does experiments into the paranormal and supernatural, including those that involve human test subjects. Inadvertently, they have created a portal to an alternate dimension called "the Upside Down". The influence of the Upside Down starts to affect the unknowing residents of Hawkins in calamitous ways</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-container">
+            <div class="centered">
+              <h2 class="header vertical-push">Are you deaf? I thought we were friends, you know? But friends tell each other the truth. And they definitely don't lie to each other. You hurt me, do you understand? What you did sucks. <span class="quote-author pull-right">Mike</span></h2>
+            </div>
+          </div>
+
+          <div class="title">
+            <div class="menu-item">
+              <div class="inner-wrap is-active">
+                <span>Featuring</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container sticks">
+            <div class="character-titles">
+              <ul>
+                <li>Eleven</li>
+                <li>Lucas</li>
+                <li>Will</li>
+                <li>Mike</li>
+                <li>Dustin</li>
+              </ul>
+            </div>
+            <div class="characters align-outer-left-half">
+              <div class="bg-stick eleven">
+                <div class="mobile-name" data-audio="kiki">
+                  <div class="name">eleven</div>
+                  <div class="play-icon"></div>
+                </div>
+              </div>
+              <div class="bg-stick lucas">
+                <div class="mobile-name" data-audio="robert">
+                  <div class="name">lucas</div>
+                  <div class="play-icon"></div>
+                </div>
+              </div>
+              <div class="bg-stick will">
+                <div class="mobile-name" data-audio="tony" >
+                  <div class="name">will</div>
+                  <div class="play-icon"></div>
+                </div>
+              </div>
+              <div class="bg-stick mike">
+                <div class="mobile-name" data-audio="wanda">
+                  <div class="name">mike</div>
+                  <div class="play-icon"></div>
+                </div>
+              </div>
+              <div class="bg-stick dustin">
+                <div class="mobile-name" data-audio="ginger">
+                  <div class="name">dustin &amp; steve</div>
+                  <div class="play-icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-container" id="last-about">
+            <div class="centered-eleven">
+              <h2 class="header vertical-push">Friends don't lie <span class="quote-author pull-right"> Eleven</span></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="about flex-fix" id="about">
+          <div class="lower-menu-wrapper">
+            <ul class="lower-menu centered">
+              <li class="menu-item js-open-lower" data-link="filmmaker">THE FILMMAKERS</li>
+              <li class="menu-item js-open-lower" data-link="crew">THE CAST</li>
+              <li class="menu-item js-open-lower" data-link="media"></li>
+              <li class="menu-item js-open-lower" data-link="screenings"></li>
+            </ul>
+          </div>
+
+          <div class="flex-container collapsed" id="filmmaker">
+            <img src="./assets/img/kg-bg.jpg" class="kg-bg align-outer-left" />
+            <div class="bg-color align-outer-left"></div>
+            <div class="centered">
+              <h2 class="header vertical-push">At that point, we only had one script written. We didn’t have an established track record so she really loved the script. But it was kind of a leap of faith on her part,” Matt said. <span class="quote-author pull-right">Ross Duffer</span></h2>
+
+              <div class="title">
+                <div class="menu-item">
+                  <div class="inner-wrap is-active">
+                    <span>The Filmmakers</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper-small mobile-adjust clearfix">
+                <p class="description paragraph">The Duffer brothers, Interested in filmmaking from a young age, the Duffers moved from their native North Carolina to California to study filmmaking at Chapman University. They are twin brothers, and have had a close relationship since childhood.[1] They work on all of their projects as a duo. <span class="italics">The Americans</span>. This work changed her life.</p>
+                <div class="slice clearfix">
+                  <div class="slice-item mobile-full">
+                    <p class="description paragraph">The Duffer Brothers were born and raised in Durham, North Carolina. They began making films in the third grade using a Hi8 video camera that was a gift from their parents. They attended the Duke School for Children from grades K-8, a private suburban school, and then matriculated to the Charles E. Jordan High School, a large Durham public school. They relocated to Orange, California to study film at Chapman University's Dodge College of Film and Media Arts, where they graduated in 2007.[2][3] After writing and/or directing a number of short films, their script for the post-apocalyptic horror film, Hidden, was acquired by Warner Bros. Pictures in 2011.[4] The brothers directed the film in 2012, which was released in 2015. Director M. Night Shyamalan read the script and hired them as writer/producers on the Fox television series Wayward Pines. </p>
+                  </div>
+                  <div class="slice-item spaced mobile-full">
+                    <img src="./assets/img/kg-fog.jpg" alt="" />
+                  </div>
+                </div>
+                <p class="description paragraph">From their experience in television, they began pitching their idea for Stranger Things, which Dan Cohen eventually brought to Shawn Levy. With Levy's 21 Laps production company on board, the show was quickly picked up by Netflix.[2][5] The show is set in 1983 Indiana and is an homage to '80s pop culture,[6] inspired and aesthetically informed by the works of Steven Spielberg, John Carpenter, Stephen King, and George Lucas, among others.</p>
+                <p class="description paragraph">It premiered in the summer of 2016 to excellent reviews,[9] specifically for its characterization, pacing, atmosphere, acting, soundtrack, directing, writing, and homages to 1980s genre films, and subsequently began to develop a cult following online.[10] Review aggregator Rotten Tomatoes gave the series an approval rating of 95%, based on 55 reviews, with a weighted average score of 8.1/10. The site's critical consensus states, "Exciting, heartbreaking, and sometimes scary, Stranger Things acts as an addictive homage to Spielberg films and vintage 1980s television."[11] On August 31, 2016, Netflix renewed the series for a second season of nine episodes, which were released on October 27, 2017. In December 2017, Netflix renewed the series for a third season.</p>
+
+                <div class="connect">
+                  <span class="header-xsmall">Connect</span>
+                  <ul class="list-inline">
+                    <li class="list-item"><a href="http://katygrannan.com" target="_blank">katygrannan.com /</a></li>
+                    <li class="list-item"><a href="http://fraenkelgallery.com" target="_blank">fraenkelgallery.com  /</a></li>
+                    <li class="list-item"><a href="http://salon94.com" target="_blank">www.salon94.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-container collapsed" id="crew">
+            <div class="title">
+              <div class="menu-item">
+                <div class="inner-wrap is-active">
+                  <span>The Cast</span>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper clearfix">
+              <ul class="crew">
+                <li class="crew-row slice-3col">
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/millie.jpg" alt="">
+                  </div>
+                  <div class="slice-item-wide">
+                    <div class="name">Millie Bobby Brown</div>
+                    <div class="title">Eleven</div>
+                    <p class="description bio">Millie Bobby Brown (born 19 February 2004) is an English actress and model. She rose to prominence for her role as Eleven in the Netflix science fiction drama series Stranger Things, for which she earned a Primetime Emmy Award nomination for Outstanding Supporting Actress in a Drama Series at age 13.In 2013, Brown made her acting debut as a guest star in the ABC fantasy drama series Once Upon a Time in Wonderland, a spin-off of Once Upon a Time, portraying the role of Young Alice. In 2014, she had a starring role in the BBC America paranormal drama-thriller series Intruders as Madison O'Donnell.</p>
+                    <a href="http://www.hannahhugh.es/" target="_blank" class="link">www.hannahhugh.es/</a>
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item-wide">
+                    <div class="name">Caleb McLaughlin</div>
+                    <div class="title">Lucas</div>
+                    <p class="description bio">Caleb Reginald McLaughlin (born October 13, 2001) is an American actor. He began his career on the Broadway stage as Young Simba in the musical The Lion King. Since 2016, he has portrayed Lucas Sinclair in the Netflix science fiction drama series Stranger Things.[1] In 2017, McLaughlin appeared in the BET miniseries The New Edition Story as Ricky Bell. McLaughin grew up in Carmel, a small town in suburban New York. He attended Kent Primary School and later attended George Fischer Middle School for one year. After fifth grade, McLaughlin moved to New York City.[citation needed]</p>
+                    <a href="http://www.johnmcneilstudio.com/" target="_blank" class="link">johnmcneilstudio.com</a>
+                  </div>
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/caleb.jpg" alt="">
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/gaten.jpg" alt="">
+                  </div>
+                  <div class="slice-item-wide">
+                    <div class="name">Gaten Matarazzo</div>
+                    <div class="title">Dustin</div>
+                    <p class="description bio">Gaten John Matarazzo III (/ˈɡeɪtən ˌmætəˈræzoʊ/; born September 8, 2002) is an American actor. He began his career on the Broadway stage as Benjamin in Priscilla, Queen of the Desert, and as Gavroche in Les Misérables.[2] He currently stars as Dustin Henderson in the Netflix science-fiction drama series Stranger Things. Matarazzo uses his platform to raise awareness of cleidocranial dysostosis and fundraise for CCD Smiles, an organization that helps cover costs of oral surgeries for those suffering from the condition. Matarazzo has also started a line of T-shirts whose proceeds will go to CCD Smiles. </p>
+                    <a href="http://www.johnmcneilstudio.com/" target="_blank" class="link">johnmcneilstudio.com</a>
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item-wide">
+                    <div class="name">Finn Wolfhard</div>
+                    <div class="title">Mike</div>
+                    <p class="description bio">In 2016, Wolfhard plays Mike Wheeler in the Netflix series Stranger Things.[5] He auditioned for the role via video after seeing an open casting call.[3] The cast of the series won a SAG Award for Outstanding Performance by an Ensemble in a Drama Series.[6]
+He played Richie Tozier in the film adaptation of Stephen King's It, which was released on September 8, 2017.[7][8] The casting of Wolfhard in both Stranger Things and It, set in the '80s, had been a coincidence.[9] </p>
+                    <a href="http://www.imdb.com/name/nm0810625/" target="_blank" class="link">IMDB</a>
+                  </div>
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/finn.jpg" alt="">
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/noah.jpg" alt="">
+                  </div>
+                  <div class="slice-item-wide">
+                    <div class="name">Noah Schnapp</div>
+                    <div class="title">Will</div>
+                    <p class="description bio">Noah Schnapp (born October 3, 2004[1]) is an American actor who portrays Will Byers in the Netflix science fiction series Stranger Things[2]. He voiced Charlie Brown in The Peanuts Movie[3] and also appeared in the 2015 Steven Spielberg film Bridge of Spies.[4] He returned to Stranger Things for the second season, which premiered on October 27, 2017.[5][6]</p>
+                    <a href="http://www.imdb.com/name/nm1580780/" target="_blank" class="link">IMDB</a>
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item-wide">
+                    <div class="name">David Harbou</div>
+                    <div class="title">Hopper</div>
+                    <p class="description bio">David Harbour (born April 10, 1975) is an American actor. He currently stars in the Netflix series Stranger Things as Police Chief Jim Hopper for which he received nominations for a Primetime Emmy Award and a Golden Globe Award in 2017. He won Critics' Choice Television Awards for Best Supporting Actor in a Drama Series in 2018. He recently finished filming the title role in the upcoming reboot for Hellboy.</p>
+                    <a href="http://stevenemerson.com/" target="_blank" class="link">stevenemerson.com</a>
+                  </div>
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/david.jpg" alt="">
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/winona.jpg" alt="">
+                  </div>
+                  <div class="slice-item-wide">
+                    <div class="name">Winona Ryder</div>
+                    <div class="title">Joyce</div>
+                    <p class="description bio">Winona Laura Horowitz (born October 29, 1971),[1] known professionally as Winona Ryder, is an American actress. One of the most successful and iconic actresses of the 1990s,[2][3][4] she made her film debut in the film Lucas (1986). As Lydia Deetz, a goth teenager in Tim Burton's Beetlejuice (1988), she won critical acclaim and widespread recognition. After appearances in film and on television, Ryder continued her acting career with the cult film Heathers (1988), a controversial satire of teenage suicide and high school life that has since become a landmark teen film.</p>
+                    <a href="http://www.imdb.com/name/nm0170449/" target="_blank" class="link">IMDB</a>
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item-wide">
+                    <div class="name">Natalia Dyer</div>
+                    <div class="title">Nancy</div>
+                    <p class="description bio">Dyer's first role was as Clarissa Granger in Hannah Montana: The Movie in 2009. In 2011, she appeared in The Greening of Whitney Brown. Dyer then starred in the indie film I Believe in Unicorns which premiered in 2014 at SXSW.[4][5]
+
+In 2016, Dyer began starring as Nancy Wheeler in the Netflix series Stranger Things.[6]</p>
+                    <a href="http://www.stimmung.tv/" target="_blank" class="link">stimmung.tv</a>
+                  </div>
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/natalia.jpg" alt="">
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/charlie.jpg" alt="">
+                  </div>
+                  <div class="slice-item-wide">
+                    <div class="name">Charlie Heaton </div>
+                    <div class="title">Jonathon</div>
+                    <p class="description bio">In 2015, Heaton made his acting debut with the ITV crime drama series DCI Banks, playing the role of Gary McCready.[3] Then he appeared as Riley in ITV's detective series Vera.[4]
+
+He guest starred in BBC One's medical drama series Casualty as Jason Waycott.[5] In 2016, he appeared in the thriller film Shut In, co-starring Naomi Watts and Oliver Platt,[6] and directed by Farren Blackburn.[7] Heaton also plays Jonathan Byers in the Netflix supernatural drama series Stranger Things.[8][9]
+
+In May 2017, Heaton was cast to star as Samuel "Sam" Guthrie / Cannonball in New Mutants,[10] a 2019 film based on the Marvel Comics comic book of the same name.</p>
+                    <a href="http://www.postdigital.com/" target="_blank" class="link">postdigital.com</a>
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item-wide">
+                    <div class="name">Joe Kerry</div>
+                    <div class="title">Steve</div>
+                    <p class="description bio">After graduating from DePaul, Keery went to over a hundred auditions.[3] Before his breakout role in Stranger Things, Keery appeared in a KFC, Domino's, and amiibo commercial, and had roles in Empire and Chicago Fire.[2][4] His first appearance in a full-length film was in Stephen Cone's indie, Henry Gamble's Birthday Party.[2]
+
+In late 2015, Keery was cast in Stranger Things. He initially auditioned for the role of Jonathan, but later sent in a tape for his character, Steve.[5] He was promoted from recurring cast to a series regular for the second season of Stranger Things, which premiered on October 27, 2017.[6] </p>
+                    <a href="http://www.imdb.com/name/nm1294091/" target="_blank" class="link">IMDB</a>
+                  </div>
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/joe.jpg" alt="">
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/sean.jpg" alt="">
+                  </div>
+                  <div class="slice-item-wide">
+                    <div class="name">Sean Aston</div>
+                    <div class="title">Bob</div>
+                    <p class="description bio">Sean Patrick Astin (né Duke; February 25, 1971) is an American actor, voice actor, director and producer. He is best known for his roles as Samwise Gamgee in The Lord of the Rings trilogy (2001–2003), Mikey Walsh in The Goonies (1985), the title character of Rudy (1993), Doug in 50 First Dates (2004), and Bob Newby in the second season of Stranger Things (2017).</p>
+                    <a href="http://www.pranaynichani.com/" target="_blank" class="link">pranaynichani.com</a>
+                  </div>
+                </li>
+                <li class="crew-row slice-3col">
+                  <div class="slice-item-wide">
+                    <div class="name">Dacre Montgomery</div>
+                    <div class="title">Billy</div>
+                    <p class="description bio">Montgomery's career started in the short film Bertrand the Terrible as Fred, in 2010. In 2011, he was in a TV Pilot called Family Tree. In 2015, Montgomery appeared in the music video for Old Souls by Australian deathcore band Make Them Suffer[2]. Montgomery appeared in Aussie music duo Angus & Julia Stone's music video for their song 'Chateau'. Montgomery also starred as Jason, the Red Ranger, leader of the Power Rangers, in the Power Rangers feature film reboot. The film was released in 2017.[3] He also appeared in the sequel to the Australian comedy A Few Best Men, titled A Few Less Men, as Mike.</p>
+                    <a href="http://www.rivkahbethmedow.com/" target="_blank" class="link">rivkahbethmedow.com</a>
+                  </div>
+                  <div class="slice-item">
+                    <img src="./assets/img/crew/dacre.jpg" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex-container collapsed" id="media">
+
+          </div>
+
+          <div class="flex-container collapsed" id="screenings">
+
+            </div>
+
+
+
+            <div class="wrapper center-text">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay">
+    <div class="close icon icon-27 icon-close"></div>
+    <div class="overlay-content">
+      <div class="iframe vimeo"></div>
+      <div class="alt-link alternate visible" data-rel="180931402">Watch Alternate Trailer</div>
+      <div class="alt-link primary" data-rel="245801538">Watch Primary Trailer</div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/nineapp.js"></script>
+  <!-- <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script> -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+    { (i[r].q=i[r].q||[]).push(arguments)}
+    ,i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-61838657-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
