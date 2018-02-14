@@ -1724,10 +1724,10 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
 
 
 /*IMAGE 1*/
+/* JERSEYFLY */
 
 
-
-    .page-section ._animation_hybmix {
+    .page-section .jerseyfly {
         position: absolute;
         top: 0;
         left: 50%;
@@ -1745,13 +1745,13 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
         transition: width 150ms ease-out;
     }
     @media (min-width:550px) {
-        .page-section ._animation_hybmix {
+        .page-section .jerseyfly {
             height: 100vh;
             background-position: left;
         }
     }
     @media (min-width:750px) {
-        .page-section ._animation_hybmix {
+        .page-section .jerseyfly {
             background: url('../JerseyFLy/img/slider/slide7.jpg') no-repeat;
             background-size: cover;
             background-position:center;
@@ -1759,7 +1759,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
         }
     }
     @media (min-width:1000px) {
-        .page-section ._animation_hybmix {
+        .page-section .jerseyfly {
             position: fixed;
             left: 0;
             top: 50%;
@@ -1802,12 +1802,11 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
 
 
 
+
 /*IMAGE 2*/
-
-
-
-
-        .page-section ._animation_zeitraum {
+/* chicagoland */
+/*
+        .page-section .chicagoland {
             position: absolute;
             top: 0;
             left: 50%;
@@ -1825,19 +1824,19 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
             transition: width 150ms ease-out;
         }
         @media (min-width:550px) {
-            .page-section ._animation_zeitraum {
+            .page-section .chicagoland {
                 height: 100vh;
             }
         }
         @media (min-width:750px) {
-            .page-section ._animation_zeitraum {
+            .page-section .chicagoland {
                 background: url('../chicagoland-aquariums/images/bg/kush1.jpg') no-repeat;
                 background-size: cover;
                 background-position: 25% center;
             }
         }
         @media (min-width:1000px) {
-            .page-section ._animation_zeitraum {
+            .page-section .chicagoland {
                 position: fixed;
                 right: 0;
                 float: right;
@@ -1853,11 +1852,84 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
                 background-position: center;
                 transition: all 150ms ease-out;
             }
-            .page-section ._animation_zeitraum:hover {
+            .page-section .chicagoland:hover {
                 width: 51%;
                 margin-left: -1%;
             }
+        } */
+
+        .page-section .chicagoland {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 100%;
+            padding: 0;
+            height: 50rem;
+            will-change: transform;
+            overflow: hidden;
+            background: url('../chicagoland-aquariums/images/bg/kush1.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: width 150ms ease-out;
         }
+        @media (min-width:550px) {
+            .page-section .chicagoland {
+                height: 100vh;
+                background-position: left;
+            }
+        }
+        @media (min-width:750px) {
+            .page-section .chicagoland {
+                background: url('../chicagoland-aquariums/images/bg/kush1.jpg') no-repeat;
+                background-size: cover;
+                background-position:center;
+
+            }
+        }
+        @media (min-width:1000px) {
+            .page-section .chicagoland {
+                position: fixed;
+                left: 0;
+                top: 50%;
+                width: 50%;
+                height: 100vh;
+                -webkit-transform: translate3d(0, -50%, 0);
+                transform: translate3d(0, -50%, 0);
+                will-change: transform;
+                overflow: hidden; //background:url('../chicagoland-aquariums/images/bg/kush1.jpg') no-repeat;
+                background-size:cover;
+                background-position:center;
+                transition:width 150ms ease-out;}
+                .page-section ._animation_hybmix:hover {
+                    width: 51%;
+                }
+            }
+            #overzeitraum .columnspecial, #overid .columnspecial {
+                float: right;
+            }
+            #overzeitraum .columnspecial:after, #overid .columnspecial:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -5;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                content: " ";
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4), 0 5px 5px 0 rgba(0, 0, 0, .44);
+                opacity: 0;
+                transition: opacity 150ms ease-out -150ms;
+            }
+            #overzeitraum .columnspecial:hover:after, #overid .columnspecial:hover:after {
+                opacity: 1;
+                transition: opacity 150ms ease-out 150ms;
+            }
+
+
 
 
 
@@ -1865,13 +1937,9 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
 
 
 /*IMAGE 4*/
+/* SWIFT ATTIC */
 
-
-
-
-
-
-        .page-section ._animation_id {
+        .page-section .swift {
             position: absolute;
             top: 0;
             left: 50%;
@@ -1889,19 +1957,19 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
             transition: width 150ms ease-out;
         }
         @media (min-width:550px) {
-            .page-section ._animation_id {
+            .page-section .swift {
                 height: 100vh;
             }
         }
         @media (min-width:750px) {
-            .page-section ._animation_id {
+            .page-section .swift {
                 background: url('../swift/homework/img/hero2.jpg') no-repeat;
                 background-size: cover;
                 background-position: center center;
             }
         }
         @media (min-width:1000px) {
-            .page-section ._animation_id {
+            .page-section .swift {
                 position: fixed;
                 right: 0;
                 float: right;
@@ -1917,7 +1985,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
                 background-position: center center;
                 transition: all 150ms ease-out;
             }
-            .page-section ._animation_id:hover {
+            .page-section .swift:hover {
                 width: 51%;
                 margin-left: -1%;
             }
@@ -1948,12 +2016,12 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
 
 
 /*IMAGE 3*/
+/* beking */
 
 
 
 
-
-.page-section .beking {
+.page-section .geekchic {
     position: absolute;
     top: 0;
     left: 50%;
@@ -1971,19 +2039,19 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
     transition: width 150ms ease-out;
 }
 @media (min-width:550px) {
-    .page-section .beking {
+    .page-section .geekchic {
         height: 100vh;
     }
 }
 @media (min-width:750px) {
-    .page-section .beking {
+    .page-section .geekchic {
         background: url('../images/hero4.jpg') no-repeat;
         background-size: cover;
         background-position: center center;
     }
 }
 @media (min-width:1000px) {
-    .page-section .beking {
+    .page-section .geekchic {
         position: fixed;
         right: 0;
         float: right;
@@ -1999,7 +2067,7 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
         background-position: center center;
         transition: all 150ms ease-out;
     }
-    .page-section .beking {
+    .page-section .geekchic {
         width: 51%;
         margin-left: -1%;
     }
@@ -2009,76 +2077,80 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
 
 
 
+/* makahomes */
 
 
+                        .page-section .makahomes {
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            -webkit-transform: translateX(-50%);
+                            -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                            width: 100%;
+                            padding: 0;
+                            height: 50rem;
+                            will-change: transform;
+                            overflow: hidden;
+                            background: url('../maka-homes/images/slider-1.jpg') no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                            transition: width 150ms ease-out;
+                        }
+                        @media (min-width:550px) {
+                            .page-section .makahomes  {
+                                height: 100vh;
+                            }
+                        }
+                        @media (min-width:750px) {
+                            .page-section .makahomes  {
+                                background: url('../maka-homes/images/slider-1.jpg') no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                            }
+                        }
+                        @media (min-width:1000px) {
+                            .page-section .makahomes  {
+                                position: fixed;
+                                right: 0;
+                                float: right;
+                                top: 50%;
+                                width: 50%;
+                                height: 100vh;
+                                -webkit-transform: translate3d(0, -50%, 0);
+                                transform: translate3d(0, -50%, 0);
+                                will-change: transform;
+                                overflow: hidden;
+                                background: url('../maka-homes/images/slider-1.jpg') no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                                transition: all 150ms ease-out;
+                            }
+                            .page-section .devteam :hover {
+                                width: 51%;
+                                margin-left: -1%;
+                            }
+                        }
+                        #overmesh .columnspecial:after {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            z-index: -5;
+                            -webkit-transform: translate3d(0, 0, 0);
+                            transform: translate3d(0, 0, 0);
+                            content: " ";
+                            box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4), 0 5px 5px 0 rgba(0, 0, 0, .44);
+                            opacity: 0;
+                            transition: opacity 150ms ease-out -150ms;
+                        }
+                        #overmesh .columnspecial:hover:after {
+                            opacity: 1;
+                            transition: opacity 150ms ease-out 150ms;
+                        }
 
-        .page-section ._animation_mesh {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-            width: 100%;
-            padding: 0;
-            height: 50rem;
-            will-change: transform;
-            overflow: hidden;
-            background: url('../maka-homes/images/slider-1.jpg') no-repeat;
-            background-size: cover;
-            background-position: 25% center;
-            transition: width 150ms ease-out;
-        }
-        @media (min-width:550px) {
-            .page-section ._animation_mesh {
-                height: 100vh;
-            }
-        }
-        @media (min-width:750px) {
-            .page-section ._animation_mesh {
-                background: url('../maka-homes/images/slider-1.jpg') no-repeat;
-                background-size: cover;
-                background-position: 25% center;
-            }
-        }
-        @media (min-width:1000px) {
-            .page-section ._animation_mesh {
-                position: fixed;
-                left: 0;
-                top: 50%;
-                width: 50%;
-                height: 100vh;
-                -webkit-transform: translate3d(0, -50%, 0);
-                transform: translate3d(0, -50%, 0);
-                will-change: transform;
-                overflow: hidden;
-                background: url('../maka-homes/images/slider-1.jpg') no-repeat;
-                background-size: cover;
-                background-position: left center;
-                transition: width 150ms ease-out;
-            }
-            .page-section ._animation_mesh:hover {
-                width: 51%;
-            }
-        }
-        #overproto .columnspecial:after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -5;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            content: " ";
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4), 0 5px 5px 0 rgba(0, 0, 0, .44);
-            opacity: 0;
-            transition: opacity 150ms ease-out -150ms;
-        }
-        #overproto .columnspecial:hover:after {
-            opacity: 1;
-            transition: opacity 150ms ease-out 150ms;
-        }
+
 
 
 
@@ -2087,14 +2159,10 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
 
 
 /*IMAGE 5*/
+/* Quantum */
 
 
-
-
-
-
-
-        .page-section ._animation_proto {
+        .page-section .quantum {
             position: absolute;
             top: 0;
             left: 50%;
@@ -2112,19 +2180,19 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
             transition: width 150ms ease-out;
         }
         @media (min-width:550px) {
-            .page-section ._animation_proto {
+            .page-section .quantum {
                 height: 100vh;
             }
         }
         @media (min-width:750px) {
-            .page-section ._animation_proto {
+            .page-section .quantum {
                 background: url('../quantum/in-class-project/img/ibm4.jpg') no-repeat;
                 background-size: cover;
                 background-position: 25% center;
             }
         }
         @media (min-width:1000px) {
-            .page-section ._animation_proto {
+            .page-section .quantum {
                 position: fixed;
                 left: 0;
                 top: 50%;
@@ -2139,16 +2207,92 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
                 background-position: center;
                 transition: width 150ms ease-out;
             }
-            .page-section ._animation_proto:hover {
+            .page-section .quantum:hover {
                 width: 51%;
             }
         }
 
 
 
+/* DEVTEAM */
+
+                .page-section .devteam {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    width: 100%;
+                    padding: 0;
+                    height: 50rem;
+                    will-change: transform;
+                    overflow: hidden;
+                    background: url('../devteam/img/stickydesk.jpg') no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    transition: width 150ms ease-out;
+                }
+                @media (min-width:550px) {
+                    .page-section .devteam  {
+                        height: 100vh;
+                    }
+                }
+                @media (min-width:750px) {
+                    .page-section .devteam  {
+                        background: url('../devteam/img/stickydesk.jpg') no-repeat;
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                }
+                @media (min-width:1000px) {
+                    .page-section .devteam  {
+                        position: fixed;
+                        right: 0;
+                        float: right;
+                        top: 50%;
+                        width: 50%;
+                        height: 100vh;
+                        -webkit-transform: translate3d(0, -50%, 0);
+                        transform: translate3d(0, -50%, 0);
+                        will-change: transform;
+                        overflow: hidden;
+                        background: url('../devteam/img/stickydesk.jpg') no-repeat;
+                        background-size: cover;
+                        background-position: center center;
+                        transition: all 150ms ease-out;
+                    }
+                    .page-section .devteam :hover {
+                        width: 51%;
+                        margin-left: -1%;
+                    }
+                }
+                #overmesh .columnspecial:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -5;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                    content: " ";
+                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4), 0 5px 5px 0 rgba(0, 0, 0, .44);
+                    opacity: 0;
+                    transition: opacity 150ms ease-out -150ms;
+                }
+                #overmesh .columnspecial:hover:after {
+                    opacity: 1;
+                    transition: opacity 150ms ease-out 150ms;
+                }
 
 
 
+
+
+
+
+/* JERSEYFLY */
 
         .page-section .jersey {
             position: absolute;
@@ -2201,6 +2345,58 @@ nav.secnavi_deskt ul, nav.secnavi_deskt ul li {
                 margin-left: -1%;
             }
         }
+
+
+        .page-section .strangerthings {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 100%;
+            padding: 0;
+            height: 50rem;
+            will-change: transform;
+            overflow: hidden;
+            background: url('../strangerthings/assets/img/bg/01_intro.jpg') no-repeat;
+            background-size: cover;
+            background-position: 25% center;
+            transition: width 150ms ease-out;
+        }
+        @media (min-width:550px) {
+            .page-section .strangerthings {
+                height: 100vh;
+            }
+        }
+        @media (min-width:750px) {
+            .page-section .strangerthings {
+                background: url('../strangerthings/assets/img/bg/01_intro.jpg') no-repeat;
+                background-size: cover;
+                background-position: 25% center;
+            }
+        }
+        @media (min-width:1000px) {
+            .page-section .strangerthings {
+                position: fixed;
+                left: 0;
+                top: 50%;
+                width: 50%;
+                height: 100vh;
+                -webkit-transform: translate3d(0, -50%, 0);
+                transform: translate3d(0, -50%, 0);
+                will-change: transform;
+                overflow: hidden;
+                background: url('../strangerthings/assets/img/bg/01_intro.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+                transition: width 150ms ease-out;
+            }
+            .page-section .strangerthings:hover {
+                width: 51%;
+            }
+        }
+
 
 
 
