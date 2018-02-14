@@ -1,0 +1,18 @@
+.hero {
+    opacity: 1;
+    position: relative;
+
+    transition: all 1.8s ease-in;
+
+    &.is-hidden {
+        opacity: 0;
+        .meta {
+            opacity: 0;
+        }
+    }
+
+    .meta {
+        opacity: 1;
+        transition: opacity 1.6s ease 1.5s;
+    }
+}

@@ -1,0 +1,26 @@
+.down {
+  position: absolute;
+  transition: bottom 0.3s cubic-bezier(0.21, 1.03, 0.66, 0.93);
+
+  bottom: -200px;
+  left: 50%;
+  width: 100px;
+  cursor: pointer;
+  margin-left: -50px;
+  visibility: hidden;
+  z-index: 2;
+
+  &.is-vis {
+    bottom: 5vh;
+    visibility: visible;
+  }
+
+  .header-sub, .down-arrow {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+  }
+  .down-arrow {
+    font-size: 3rem;
+  }
+}
