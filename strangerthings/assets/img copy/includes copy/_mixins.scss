@@ -1,0 +1,64 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.block {
+	display: block;
+}
+
+.height {
+	height: 100%;
+}
+
+.slice-row {
+	display: table-row;
+}
+
+.table-layout-fixed {
+	table-layout: fixed;
+}
+
+.align-middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.align-bottom {
+	vertical-align: bottom;
+}
+
+.italics {
+    font-style: italic;
+}
+
+@mixin type-size ($size) {
+	font-size: $size + rem;
+	line-height: $size * $line-height-factor + rem;
+	letter-spacing: $size * $letter-spacing-factor + rem;
+}
+
+$media-style: max-width;
+@mixin respond-to($breakpoint) {
+  @media only screen and ($media-style: $breakpoint + px) { @content; }
+}
+
+@include tablet() {
+    .mobile-hidden {
+        display: none;
+    }
+    .mobile-full {
+        width: 100% !important;
+        padding: 0px !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
