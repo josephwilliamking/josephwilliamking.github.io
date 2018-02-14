@@ -1,0 +1,20 @@
+.paragraph {
+    @include type-size(1.85);
+    margin-bottom: $spacing-double;
+}
+.paragraph-header { @include type-size(4.4); line-height: 1.5em; }
+.paragraph-medium { @include type-size(1.5); }
+.paragraph-small  { @include type-size(1.3); }
+.paragraph-sub {
+  @extend .paragraph;
+  margin-bottom: 30px;
+}
+
+.paragraph-no-margin {
+  margin-bottom: 0;
+}
+
+
+@if $EXTENDBASE {
+	p { @extend .paragraph; }
+}

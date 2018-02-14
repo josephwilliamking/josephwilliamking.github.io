@@ -1,0 +1,40 @@
+.header {
+	font-weight: bold;
+  font-size: 7.5rem;
+  letter-spacing: -0.3rem;
+  color: #ffffff;
+  line-height: 1.2em;
+
+  @include phone() {
+    font-size: 3.2rem;
+  }
+}
+
+.quote-author {
+	font-size: 2.2rem;
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 0.3em 0.9em;
+	vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 1.2em;
+
+	@include phone() {
+		font-size: 1.5rem;
+		position: relative;
+    top: -0.3em;
+    left: 0.3em;
+	};
+}
+
+.header-small {
+  font-size: 3.8em;
+  letter-spacing: -0.2rem;
+  line-height: 4rem;
+}
+
+.header-xsmall { font-size: 2.2rem; }
+
+.header-sub { font-size: 1.8rem; }

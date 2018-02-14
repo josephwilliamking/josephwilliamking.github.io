@@ -1,0 +1,43 @@
+.link {
+	transition-property: color;
+	transition-duration: 0.3s;
+
+	color: $site-highlight;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover { color: lighten($site-highlight, 20%); }
+}
+.link-alt {
+	@extend .link;
+	color: $site-color;
+
+	&:hover {
+		color: $site-stroke;
+	}
+}
+.link-arrow {
+	@extend .link;
+	&:after {
+		content: "\279E";
+		display: inline-block;
+		clear: both;
+		margin-left: $spacing-half;
+	}
+}
+.link-arrow-alt {
+	color: #fff;
+	font-size: 1.3rem;
+}
+.link-arrow-down {
+	@extend .link;
+	&:after {
+		content: "\2913";
+		display: inline-block;
+		clear: both;
+		margin-left: $spacing-half;
+	}
+}
+@if $EXTENDBASE {
+	a { @extend .link; }
+}

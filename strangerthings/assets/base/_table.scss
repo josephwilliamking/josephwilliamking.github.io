@@ -1,0 +1,30 @@
+// http://css-tricks.com/complete-guide-table-element/
+// tables are currently missing thead/tbody from html markup
+
+.table {
+	*border-collapse: collapse; /* IE7 and lower */
+	border-collapse: collapse;
+  border-spacing: 0;
+
+	letter-spacing: 1.4rem * $letter-spacing-factor;
+
+	th:first-child {
+		padding-right: $spacing-quad;
+	}
+}
+
+.table-header {
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.table-cell {
+	padding: 15px 35px 15px 15px;
+	border: 1px solid $site-stroke;
+}
+
+@if $EXTENDBASE {
+	table { @extend .table; }
+	table th { @extend .table-header; }
+	table th, table td { @extend .table-cell; }
+}

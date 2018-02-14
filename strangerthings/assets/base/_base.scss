@@ -1,0 +1,77 @@
+// sets whether to extend standard modules
+// to their logical base elements
+$EXTENDBASE: true;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: $baseline;
+	color: $site-color;
+    height: 100%;
+    width: 100%;
+
+    background-color: black;
+}
+
+body {
+    background: $site-background;
+
+    text-transform: none;
+    text-decoration: none;
+    text-align: left;
+
+    word-wrap: normal;
+
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    font-variant: normal;
+    font-style: normal;
+    font-weight: normal;
+
+    font-family: 'Karla', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+    tap-highlight-color: transparent;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+hr {
+    margin: $spacing-double auto;
+    display: block;
+}
+
+.reset-vertical {
+    margin-bottom: 0px !important;
+}
+
+.vertical-push {
+    margin-bottom: 5rem !important;
+}
+.vertical-push-large {
+    margin-bottom: 10rem !important;
+}
+
+@include tablet-l() {
+    html { font-size: 9.5px; }
+}
+
+@include tablet() {
+    html { font-size: 9px; }
+}
+
+@include phone() {
+    html { font-size: 8.5px; }
+    html, body {
+        height: auto;
+    }
+}

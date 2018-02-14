@@ -1,0 +1,22 @@
+.list {
+	list-style: none;
+}
+
+.list-item {
+	@include type-size(1.5);
+	margin-bottom: $spacing-double;
+}
+
+.list-inline {
+	@extend .list;
+	.list-item, li {
+		padding: 0 3px 0 0;
+		margin-bottom: 0;
+        display: inline;
+	}
+}
+
+@if $EXTENDBASE {
+	ul { @extend .list; }
+	li { @extend .list-item; }
+}
