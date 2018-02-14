@@ -1,0 +1,52 @@
+.lower-menu-wrapper {
+    background: white;
+    opacity: 1;
+    position: relative;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5vh 0px;
+    top: 0px;
+    // transition: all 0.3s ease;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    right: 0;
+
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+
+    @supports (position: sticky) {
+      position: sticky;
+      transform: none;
+      top: -1px;
+    }
+
+    &.fixed {
+        position: fixed;
+        transform: translateY(0);
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+    }
+    li.menu-item {
+        display: flex;
+        margin: auto;
+        align-self: center;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        transition: color 0.3s ease;
+
+        &.active {
+          color: $site-highlight;
+        }
+    }
+}

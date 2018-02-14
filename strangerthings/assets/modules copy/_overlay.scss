@@ -1,0 +1,61 @@
+.overlay {
+	transition-duration: 0.2s;
+	transition-property: opacity;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 0px;
+	opacity: 0;
+
+	-webkit-backface-visibility: hidden;
+
+	z-index: -1;
+	display: none;
+
+	&.active {
+		display: flex;
+		align-items: center;
+
+		transition-duration: 0.2s;
+		transition-property: opacity, background;
+
+		background-color: rgba(0,0,0, 0.8);
+		height: 100vh;
+		z-index: 999;
+		opacity: 1;
+	}
+
+	.overlay-content {
+		width: 100%;
+		max-width: 130vh;
+		overflow: hidden;
+
+		display: block;
+		margin: 0 auto;
+	}
+
+	.close {
+		position: fixed;
+		right: 20px;
+		top: 10px;
+		z-index: 2;
+		cursor: pointer;
+	}
+}
+
+.alt-link {
+	  margin-top: 30px;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+		cursor: pointer;
+		display: none;
+    a {
+    	color: white;
+    }
+		&.visible {
+			display: inline-block;
+		}
+}
